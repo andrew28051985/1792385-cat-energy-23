@@ -38,10 +38,126 @@
       </div>
     </header>
 
-    <main class="page-main">
-      <h1 class="page-main__title">
+    <main class="page-inner">
+
+      <h1 class="page-inner__title">
         Подбор программы
       </h1>
+
+      <section class="selection-program">
+        <h2 class="visually-hidden">
+          Подбор программы питания для вашего кота
+        </h2>
+        <form class="selection-program__form form" action="https://echo.htmlacademy.ru" method="POST" target="_blank">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend form__legend--top">
+              Заполните анкету, и мы подберем программу питания для вашего кота
+            </legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="name-cat">
+                  ИМЯ:*
+                </label>
+                <input class="form__input" type="text" id="name-cat" name="cat-name" placeholder="Барсик">
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="weight-cat">
+                  Вес (кг):*
+                </label>
+                <input class="form__input" type="text" id="weight-cat" name="cat-weight" placeholder="7">
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="age-cat">
+                  Возраст (лет):
+                </label>
+                <input class="form__input" type="text" id="age-cat" name="cat-age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input-checkbox" name="weight-loss" type="checkbox" id="weight-loss" checked>
+                <label class="form__label-checkbox" for="weight-loss">похудение</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" name="weight-up" id="weight-up">
+                <label class="form__label-checkbox" for="weight-up">Набор массы</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" name="advice" id="advice">
+                <label class="form__label-checkbox" for="advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend form__legend--middle">
+              Контактные данные (владельца кота)
+            </legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="email">E-mail:*</label>
+                <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="phone">Телефон:*</label>
+                <input class="form__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__foeldset">
+            <legend class="form__legend form__legend--middle">Комментарий</legend>
+            <input class="form__input" type="text" name="comment" placeholder="Расскажите обо всех повадках кота">
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend form__legend--middle">
+              Дополнительно
+            </legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="form__label-checkbox" for="sweetener">сахарозаменитель</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" name="water" id="water">
+                <label class="form__label-checkbox" for="water">питьевая вода</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" name="milk" id="milk">
+                <label class="form__label-checkbox" for="milk">молоко</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" name="vitamins" id="vitamins">
+                <label class="form__label-checkbox" for="vitamins">витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="form__button button" type="submit">
+            отправить заявку
+          </button>
+        </form>
+        <p class="selection-program__text">
+          * — Обязательные поля
+        </p>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Расположение магазина на карте</h2>
+        <div class="map__cooperation">
+          <div class="map__wrapper">
+            <h3 class="map__title">
+              приглашаем к сотрудничеству дилеров!
+            </h3>
+            <p class="map__description">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </p>
+          </div>
+        </div>
+        <div class="map__visually">
+          <!-- Тут будет карта -->
+        </div>
+      </section>
+
     </main>
 
     <footer class="page-footer">
