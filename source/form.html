@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи: Подбор программы</title>
@@ -40,19 +40,15 @@
 
     <main class="page-inner">
 
-      <h1 class="page-inner__title">
-        Подбор программы
-      </h1>
-
       <section class="selection-program">
-        <h2 class="visually-hidden">
-          Подбор программы питания для вашего кота
-        </h2>
+        <h1 class="selection-program__title">
+          Подбор программы
+        </h1>
         <form class="selection-program__form form" action="https://echo.htmlacademy.ru" method="POST" target="_blank">
           <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend--top">
+            <p class="form__text form__text--top">
               Заполните анкету, и мы подберем программу питания для вашего кота
-            </legend>
+            </p>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label" for="name-cat">
@@ -77,16 +73,16 @@
           <fieldset class="form__fieldset">
             <ul class="form__list">
               <li class="form__item">
-                <input class="form__input-checkbox" name="weight-loss" type="checkbox" id="weight-loss" checked>
-                <label class="form__label-checkbox" for="weight-loss">похудение</label>
+                <input class="form__input-radio" type="radio" name="select-cat-program" value="weight-loss" id="weight-loss" checked>
+                <label class="form__label-radio" for="weight-loss">похудение</label>
               </li>
               <li class="form__item">
-                <input class="form__input-checkbox" type="checkbox" name="weight-up" id="weight-up">
-                <label class="form__label-checkbox" for="weight-up">Набор массы</label>
+                <input class="form__input-radio" type="radio" name="select-cat-program" value="weight-up" id="weight-up">
+                <label class="form__label-radio" for="weight-up">Набор массы</label>
               </li>
               <li class="form__item">
-                <input class="form__input-checkbox" type="checkbox" name="advice" id="advice">
-                <label class="form__label-checkbox" for="advice">Не знаю (Нужен ваш совет)</label>
+                <input class="form__input-radio" type="radio" name="select-cat-program" value="advice" id="advice">
+                <label class="form__label-radio" for="advice">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -107,7 +103,7 @@
           </fieldset>
           <fieldset class="form__foeldset">
             <legend class="form__legend form__legend--middle">Комментарий</legend>
-            <input class="form__input" type="text" name="comment" placeholder="Расскажите обо всех повадках кота">
+            <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend form__legend--middle">
