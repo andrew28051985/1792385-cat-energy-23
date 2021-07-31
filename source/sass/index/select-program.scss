@@ -1,0 +1,12 @@
+.select-program {
+  width: 320px;
+
+  text-align: center;
+}
+
+.select-program__wrapper {
+  height: 302px;
+  background: linear-gradient(to top, $background-green, $background-green), url("../img/background@1044.jpg") no-repeat 65%/163%;
+
+  color: $basik-light;
+}
