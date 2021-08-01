@@ -1,0 +1,14 @@
+.surprice {
+  margin-bottom: 35px;
+  background: $background-green url("../img/catalog/surprice.png") no-repeat 0 0;
+}
+
+.surprice__text {
+  @include zero-margin-padding;
+  padding: 186px 61px 43px 58px;
+  font-family: "Arial", sans-serif;
+
+  @include font-size-line-height(16px, 20px);
+  color: $basik-light;
+  text-align: center;
+}

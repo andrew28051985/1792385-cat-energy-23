@@ -30,14 +30,3 @@
   width: 280px;
   margin: 0 auto;
 }
-
-.select-program__button {
-  display: block;
-  padding: 7px 0;
-
-  @include font-size-line-height(14px, 18px);
-
-  text-decoration: none;
-  color: $basik-light;
-  background-color: $basic-green;
-}

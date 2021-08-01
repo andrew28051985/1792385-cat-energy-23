@@ -1,0 +1,12 @@
+.page-inner {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.page-inner__title {
+  @include zero-margin-padding;
+  padding: 27px 0 41px;
+
+  @include font-size-line-height(36px, 36px);
+  font-weight: 400;
+}

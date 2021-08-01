@@ -1,0 +1,28 @@
+.product-card {
+  margin-bottom: 20px;
+}
+
+.product-card__title {
+  @include zero-margin-padding;
+  padding: 13px 0;
+
+  @include font-size-line-height(16px, 16px);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $text-second-grey;
+}
+
+.product-card__list {
+  @include zero-margin-padding;
+  margin-bottom: 15px;
+}
+
+.product-card__price {
+  @include zero-margin-padding;
+}
+
+.product-card__description,
+.product-card__price {
+  @include font-size-line-height(14px, 14px);
+  color: $text-grey;
+}

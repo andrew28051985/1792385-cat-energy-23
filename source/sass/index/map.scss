@@ -1,3 +1,12 @@
+.map {
+  &--index {
+    background-color: $basik-light;
+  }
+  &--inner {
+    background-color: $background-grey;
+  }
+}
+
 .map__cooperation {
   margin-bottom: 26px;
   padding: 28px 0 0;
