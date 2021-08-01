@@ -1,4 +1,5 @@
 .desсription-catalog {
+  margin-bottom: 27px;
   padding: 0 20px;
 }
 
@@ -18,6 +19,7 @@
 .desсription-catalog__title {
   @include zero-margin-padding;
   margin-bottom: 30px;
+
   @include font-size-line-height(24px, 37px);
   font-weight: initial;
   text-transform: uppercase;
@@ -29,6 +31,7 @@
   margin-bottom: 38px;
 
   font-family: "Arial", sans-serif;
+
   @include font-size-line-height(14px, 18px);
   color: $text-grey;
 }
