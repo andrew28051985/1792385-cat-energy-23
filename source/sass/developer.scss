@@ -1,0 +1,16 @@
+.developer {
+  padding: 22px 0;
+}
+
+.developer__link {
+  @include zero-margin-padding;
+  text-decoration: none;
+}
+
+.developer__name {
+  @include zero-margin-padding;
+  font-family: "Arial", sans-serif;
+
+  @include font-size-line-height(16px, 18px);
+  color: $text-grey;
+}

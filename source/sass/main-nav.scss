@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.main-nav__item {
+  padding: 22px 0 24px;
+}
+
 .main-nav__list {
   @include zero-margin-padding;
 

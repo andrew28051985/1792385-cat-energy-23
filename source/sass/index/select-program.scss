@@ -1,4 +1,5 @@
 .select-program {
+  margin-bottom: 22px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -12,6 +13,7 @@
 
 .select-program__title {
   margin: 0;
+  padding: 27px 0 25px;
 
   @include font-size-line-height(36px, 36px);
   font-weight: 400;
@@ -24,8 +26,14 @@
   @include font-size-line-height(14px, 14px);
 }
 
+.select-program__wrapper-button {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .select-program__button {
   display: block;
+  padding: 7px 0;
 
   @include font-size-line-height(14px, 18px);
 
