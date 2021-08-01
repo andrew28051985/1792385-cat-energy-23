@@ -1,18 +1,19 @@
 .page {
   height: 100%;
+}
 
-  &__body {
-    width: 320px;
-    height: 100%;
+.page__body {
+  width: 320px;
+  height: 100%;
 
-    @include zero-margin-padding;
+  @include zero-margin-padding;
+  margin: 0 auto;
 
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    color: $basic-dark;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $basic-dark;
 
-    background-color: $basik-light;
-  }
+  background-color: $basik-light;
 }
