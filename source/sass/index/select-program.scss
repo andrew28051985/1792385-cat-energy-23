@@ -1,6 +1,4 @@
 .select-program {
-  width: 320px;
-
   text-align: center;
 }
 
@@ -9,4 +7,21 @@
   background: linear-gradient(to top, $background-green, $background-green), url("../img/background@1044.jpg") no-repeat 65%/163%;
 
   color: $basik-light;
+}
+
+.select-program__title {
+  margin: 0;
+
+  @include font-size-line-height(36px, 36px);
+  font-weight: 400;
+}
+
+.select-program__slogan {
+  margin: 0;
+
+  @include font-size-line-height(14px, 14px);
+}
+
+.select-program__button {
+  @include font-size-line-height(14px, 18px);
 }
