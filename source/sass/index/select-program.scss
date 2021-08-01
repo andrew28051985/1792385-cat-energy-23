@@ -1,5 +1,6 @@
 .select-program {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .select-program__wrapper {
@@ -14,6 +15,7 @@
 
   @include font-size-line-height(36px, 36px);
   font-weight: 400;
+  text-transform: none;
 }
 
 .select-program__slogan {
