@@ -1,0 +1,13 @@
+.selection-program__title {
+  @include zero-margin-padding;
+  padding: 27px 0 37px;
+
+  @include font-size-line-height(36px, 36px);
+  font-weight: 400;
+}
+
+.selection-program__text {
+  margin: 0;
+  padding: 21px 0 32px;
+  text-align: center;
+}

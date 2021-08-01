@@ -10,8 +10,15 @@
     @include font-size-line-height(14px, 18px);
   }
 
-  &--catalog {
+  &--catalog,
+  &--form {
     @include font-size-line-height(16px, 20px);
+  }
+
+  &--form {
+    width: 100%;
+    border: none;
+    cursor: pointer;
   }
 
   &--green {

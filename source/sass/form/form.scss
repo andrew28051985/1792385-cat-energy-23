@@ -1,0 +1,83 @@
+.form__fieldset {
+  @include zero-margin-padding;
+  padding: 20px 0 20px;
+  border: none;
+}
+
+.form__fieldset:first-child {
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.form__text {
+  @include zero-style-list;
+  font-size: 14px;
+  font-weight: 400;
+
+  &--top {
+    margin-bottom: 39px;
+    text-transform: uppercase;
+  }
+}
+
+.form__list {
+  @include zero-style-list;
+}
+
+.form__label,
+.form__input,
+.form__input::-webkit-input-placeholder,
+.form__textarea {
+  @include font-size-line-height(16px, 18px);
+  color: $text-grey;
+  text-transform: uppercase;
+}
+
+.form__input {
+  margin-bottom: 14px;
+  padding: 14px 15px;
+
+  &--name {
+    width: 200px;
+  }
+
+  &--weight {
+    width: 163px;
+  }
+
+  &--old {
+    width: 144px;
+  }
+
+  &--email {
+    width: 191px;
+  }
+
+  &--phone {
+    width: 174px;
+  }
+}
+
+.form__label {
+  &--radio {
+    color: $text-second-grey;
+  }
+
+  &--checkbox {
+    color: $basic-dark;
+  }
+}
+
+.form__legend {
+  margin-bottom: 35px;
+
+  @include font-size-line-height(24px, 26px);
+  font-weight: 400;
+}
+
+.form__textarea {
+  width: 252px;
+  height: 150px;
+  padding: 9px 14px;
+  border: none;
+}
