@@ -23,5 +23,11 @@
 }
 
 .select-program__button {
+  display: block;
+
   @include font-size-line-height(14px, 18px);
+
+  text-decoration: none;
+  color: $basik-light;
+  background-color: $basic-green;
 }
