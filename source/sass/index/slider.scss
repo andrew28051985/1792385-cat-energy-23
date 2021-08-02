@@ -1,5 +1,6 @@
 .slider__list {
   @include zero-style-list;
+  text-align: center;
 }
 
 .slider__toggle {

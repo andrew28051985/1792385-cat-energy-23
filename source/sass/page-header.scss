@@ -1,17 +1,12 @@
 .page-header {
-  width: 320px;
-  margin: 0 auto;
-
   font-weight: 500;
 
   @include font-size-line-height(20px, 20px);
 }
 
 .page-header__container-logo {
-  width: 280px;
-  margin: 0 auto;
   margin-bottom: 18px;
-  padding-top: 10px;
+  padding: 10px 20px 0 20px;
 }
 
 .page-header__toggle {

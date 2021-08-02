@@ -14,8 +14,7 @@
 }
 
 .map__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .map__title {
@@ -35,7 +34,7 @@
 }
 
 .map__visually {
-  width: 320px;
+  min-width: 320px;
   height: 362px;
-  background: $background-grey url("../img/location@320.png") 0 0/100% no-repeat;
+  background: $background-grey url("../img/location@320.png") no-repeat 0 0/100%;
 }
