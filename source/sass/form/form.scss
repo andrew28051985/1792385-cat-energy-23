@@ -38,23 +38,23 @@
   padding: 14px 15px;
 
   &--name {
-    width: 200px;
+    width: 70%;
   }
 
   &--weight {
-    width: 163px;
+    width: 62%;
   }
 
   &--old {
-    width: 144px;
+    width: 50%;
   }
 
   &--email {
-    width: 191px;
+    width: 66%;
   }
 
   &--phone {
-    width: 174px;
+    width: 60%;
   }
 }
 
@@ -76,7 +76,7 @@
 }
 
 .form__textarea {
-  width: 252px;
+  width: 90%;
   height: 150px;
   padding: 9px 14px;
   border: none;
