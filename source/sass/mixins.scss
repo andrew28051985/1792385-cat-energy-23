@@ -1,0 +1,15 @@
+@mixin zero-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font-size-line-height ($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin zero-style-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

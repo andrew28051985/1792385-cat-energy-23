@@ -1,0 +1,57 @@
+.example {
+  padding: 27px 0 25px 0;
+  background-color: $background-second-grey;
+}
+
+.example__wrapper {
+  padding: 0 20px;
+}
+
+.example__title {
+  @include zero-margin-padding;
+  margin-bottom: 33px;
+
+  @include font-size-line-height(36px, 40px);
+  font-weight: initial;
+}
+
+.example__text {
+  @include zero-margin-padding;
+  margin-bottom: 25px;
+
+  font-family: "Arial", sans-serif;
+
+  @include font-size-line-height(14px, 18px);
+  color: $text-grey;
+}
+
+.example__list {
+  @include zero-margin-padding;
+  margin-bottom: 25px;
+}
+
+.example__number {
+  @include font-size-line-height(24px, 24px);
+}
+
+.example__description {
+  @include zero-margin-padding;
+
+  font-family: "Arial", sans-serif;
+
+  @include font-size-line-height(12px, 12px);
+  color: $text-grey;
+}
+
+.example__text-center {
+  @include zero-margin-padding;
+  margin-bottom: 42px;
+
+  @include font-size-line-height(14px, 20px);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__toggle {
+  text-align: center;
+}

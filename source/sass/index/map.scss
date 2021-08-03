@@ -1,0 +1,40 @@
+.map {
+  &--index {
+    background-color: $basik-light;
+  }
+
+  &--inner {
+    background-color: $background-grey;
+  }
+}
+
+.map__cooperation {
+  margin-bottom: 26px;
+  padding: 28px 0 0;
+}
+
+.map__wrapper {
+  padding: 0 20px;
+}
+
+.map__title {
+  @include zero-margin-padding;
+  @include font-size-line-height(16px, 20px);
+  font-weight: initial;
+  text-transform: uppercase;
+  color: $second-dark;
+}
+
+.map__description {
+  @include zero-margin-padding;
+  font-family: "Arial", sans-serif;
+
+  @include font-size-line-height(14px, 20px);
+  color: $text-grey;
+}
+
+.map__visually {
+  min-width: 320px;
+  height: 362px;
+  background: $background-grey url("../img/location@320.png") no-repeat 0 0/100%;
+}

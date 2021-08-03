@@ -1,0 +1,14 @@
+.slider__list {
+  @include zero-style-list;
+  text-align: center;
+}
+
+.slider__toggle {
+  line-height: 20px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}

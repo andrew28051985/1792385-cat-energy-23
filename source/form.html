@@ -2,29 +2,33 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи: Подбор программы</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon@180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="logo">
-          <a class="logo__link" href="index.html">
-            <img class="logo__link-icon logo__link-icon--size" src="img/logo-mini-icon.svg"  width="33" height="38" alt="Логотип интернет-магазина Кэт энерджи в виде иконки">
-          </a>
-          <a class="logo__link" href="index.html">
-            <img class="logo__link-text logo__link-text--size" src="img/logo-mini-text.svg" width="101" height="18" alt="Логотип интернет-магазина Кэт энерджи в виде текста">
-          </a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
+        <div class="page-header__container-logo">
+          <div class="logo">
+            <a class="logo__link" href="index.html">
+              <img class="logo__link-icon logo__link-icon--size" src="img/logo-mini-icon.svg"  width="33" height="38" alt="Логотип интернет-магазина Кэт энерджи в виде иконки">
+            </a>
+            <a class="logo__link" href="index.html">
+              <img class="logo__link-text logo__link-text--size" src="img/logo-mini-text.svg" width="101" height="18" alt="Логотип интернет-магазина Кэт энерджи в виде текста">
+            </a>
+          </div>
+          <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
+        </div>
+        <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__item-link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
@@ -54,35 +58,35 @@
                 <label class="form__label" for="name-cat">
                   ИМЯ:*
                 </label>
-                <input class="form__input" type="text" id="name-cat" name="cat-name" placeholder="Барсик">
+                <input class="form__input form__input--name" type="text" id="name-cat" name="cat-name" placeholder="Барсик">
               </li>
               <li class="form__item">
                 <label class="form__label" for="weight-cat">
                   Вес (кг):*
                 </label>
-                <input class="form__input" type="text" id="weight-cat" name="cat-weight" placeholder="7">
+                <input class="form__input form__input--weight" type="text" id="weight-cat" name="cat-weight" placeholder="7">
               </li>
               <li class="form__item">
                 <label class="form__label" for="age-cat">
                   Возраст (лет):
                 </label>
-                <input class="form__input" type="text" id="age-cat" name="cat-age" placeholder="7">
+                <input class="form__input form__input--old" type="text" id="age-cat" name="cat-age" placeholder="7">
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset">
             <ul class="form__list">
               <li class="form__item">
-                <input class="form__input-radio" type="radio" name="select-cat-program" value="weight-loss" id="weight-loss" checked>
-                <label class="form__label-radio" for="weight-loss">похудение</label>
+                <input class="form__input form__input--radio" type="radio" name="select-cat-program" value="weight-loss" id="weight-loss" checked>
+                <label class="form__label form__label--radio" for="weight-loss">похудение</label>
               </li>
               <li class="form__item">
-                <input class="form__input-radio" type="radio" name="select-cat-program" value="weight-up" id="weight-up">
-                <label class="form__label-radio" for="weight-up">Набор массы</label>
+                <input class="form__input form__input--radio" type="radio" name="select-cat-program" value="weight-up" id="weight-up">
+                <label class="form__label form__label--radio" for="weight-up">Набор массы</label>
               </li>
               <li class="form__item">
-                <input class="form__input-radio" type="radio" name="select-cat-program" value="advice" id="advice">
-                <label class="form__label-radio" for="advice">Не знаю (Нужен ваш совет)</label>
+                <input class="form__input form__input--radio" type="radio" name="select-cat-program" value="advice" id="advice">
+                <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -93,17 +97,18 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label" for="email">E-mail:*</label>
-                <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+                <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
               </li>
               <li class="form__item">
                 <label class="form__label" for="phone">Телефон:*</label>
-                <input class="form__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+                <input class="form__input form__input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__foeldset">
+          <fieldset class="form__fieldset">
             <legend class="form__legend form__legend--middle">Комментарий</legend>
-            <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
+            <label class="visually-hidden" for="comment_for_cat">комментарий о коте</label>
+            <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" id="comment_for_cat" name="comment"></textarea>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend form__legend--middle">
@@ -111,24 +116,24 @@
             </legend>
             <ul class="form__list">
               <li class="form__item">
-                <input class="form__input-checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-                <label class="form__label-checkbox" for="sweetener">сахарозаменитель</label>
+                <input class="form__input form__input--checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="form__label form__label--checkbox" for="sweetener">сахарозаменитель</label>
               </li>
               <li class="form__item">
-                <input class="form__input-checkbox" type="checkbox" name="water" id="water">
-                <label class="form__label-checkbox" for="water">питьевая вода</label>
+                <input class="form__input form__input--checkbox" type="checkbox" name="water" id="water">
+                <label class="form__label form__label--checkbox" for="water">питьевая вода</label>
               </li>
               <li class="form__item">
-                <input class="form__input-checkbox" type="checkbox" name="milk" id="milk">
-                <label class="form__label-checkbox" for="milk">молоко</label>
+                <input class="form__input form__input--checkbox" type="checkbox" name="milk" id="milk">
+                <label class="form__label form__label--checkbox" for="milk">молоко</label>
               </li>
               <li class="form__item">
-                <input class="form__input-checkbox" type="checkbox" name="vitamins" id="vitamins">
-                <label class="form__label-checkbox" for="vitamins">витамины</label>
+                <input class="form__input form__input--checkbox" type="checkbox" name="vitamins" id="vitamins">
+                <label class="form__label form__label--checkbox" for="vitamins">витамины</label>
               </li>
             </ul>
           </fieldset>
-          <button class="form__button button" type="submit" aria-label="Отправить заявку на подбор программы для кота">
+          <button class="form__button button button--form button--green" type="submit" aria-label="Отправить заявку на подбор программы для кота">
             отправить заявку
           </button>
         </form>
@@ -136,6 +141,9 @@
           * — Обязательные поля
         </p>
       </section>
+    </main>
+
+    <footer class="page-footer">
 
       <section class="map">
         <h2 class="visually-hidden">Расположение магазина на карте</h2>
@@ -154,11 +162,7 @@
         </div>
       </section>
 
-    </main>
-
-    <footer class="page-footer">
       <div class="page-footer__wrapper">
-
         <h2 class="visually-hidden">Логотип интернет магазина Кэт энерджи</h2>
         <a class="page-footer__link-logo logo-link" href="index.html" aria-label="Перейти на главную страницу интернет магазина Кэт энерджи">
           <img class="logo-link__image" src="img/logo-mini-text.svg" width="128" height="24" alt="Логотип интернет-магазина Кэт энерджи в виде текста">

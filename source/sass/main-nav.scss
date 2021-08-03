@@ -1,0 +1,20 @@
+.main-nav {
+  text-align: center;
+}
+
+.main-nav__item {
+  padding: 22px 0 24px;
+}
+
+.main-nav__list {
+  @include zero-margin-padding;
+
+  text-transform: uppercase;
+
+  list-style: none;
+}
+
+.main-nav__item-link {
+  color: $basic-dark;
+  text-decoration: none;
+}

@@ -1,0 +1,43 @@
+.desсription-catalog {
+  margin-bottom: 27px;
+  padding: 0 20px;
+}
+
+.desсription-catalog__list {
+  @include zero-style-list;
+}
+
+.desсription-catalog__item {
+  &:first-child {
+    margin-bottom: 20px;
+  }
+  padding: 20px;
+
+  background-color: $background-grey;
+}
+
+.desсription-catalog__title {
+  @include zero-margin-padding;
+  margin-bottom: 30px;
+
+  @include font-size-line-height(24px, 37px);
+  font-weight: initial;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.desсription-catalog__text {
+  @include zero-margin-padding;
+  margin-bottom: 38px;
+
+  font-family: "Arial", sans-serif;
+
+  @include font-size-line-height(14px, 18px);
+  color: $text-grey;
+}
+
+.desсription-catalog__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: initial;
+}

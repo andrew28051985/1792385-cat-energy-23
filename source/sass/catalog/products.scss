@@ -1,0 +1,7 @@
+.products__list {
+  @include zero-style-list;
+}
+
+.products__item {
+  padding: 20px 0 25px;
+}

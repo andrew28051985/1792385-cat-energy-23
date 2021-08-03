@@ -1,0 +1,32 @@
+.select-program {
+  margin-bottom: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.select-program__wrapper {
+  height: 302px;
+  margin: 0 auto;
+  background: linear-gradient(to top, $background-green, $background-green), url("../img/background@1044.jpg") no-repeat 65%/163%;
+
+  color: $basik-light;
+}
+
+.select-program__title {
+  margin: 0;
+  padding: 27px 0 25px;
+
+  @include font-size-line-height(36px, 36px);
+  font-weight: 400;
+  text-transform: none;
+}
+
+.select-program__slogan {
+  margin: 0;
+
+  @include font-size-line-height(14px, 14px);
+}
+
+.select-program__wrapper-button {
+  padding: 0 20px;
+}

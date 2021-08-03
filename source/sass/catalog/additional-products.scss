@@ -1,0 +1,15 @@
+.additional-products {
+  margin-bottom: 36px;
+}
+
+.additional-products__title {
+  @include zero-margin-padding;
+  margin-bottom: 36px;
+
+  @include font-size-line-height(24px, 24px);
+  font-weight: 400;
+}
+
+.additional-products__list {
+  @include zero-style-list;
+}

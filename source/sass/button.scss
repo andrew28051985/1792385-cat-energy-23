@@ -1,0 +1,33 @@
+.button {
+  display: block;
+  padding: 10px 0;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--main {
+    @include font-size-line-height(14px, 18px);
+  }
+
+  &--catalog,
+  &--form {
+    @include font-size-line-height(16px, 20px);
+  }
+
+  &--form {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+
+  &--green {
+    color: $basik-light;
+    background-color: $basic-green;
+  }
+
+  &--grey {
+    color: $text-grey;
+    background-color: $background-grey;
+  }
+}

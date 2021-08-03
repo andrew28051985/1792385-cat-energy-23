@@ -2,27 +2,31 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon@180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="logo">
-          <a class="logo__link">
-            <img class="logo__link-icon logo__link-icon--size" src="img/logo-mini-icon.svg"  width="33" height="38" alt="Логотип интернет-магазина Кэт энерджи в виде иконки">
-          </a>
-          <a class="logo__link">
-            <img class="logo__link-text logo__link-text--size" src="img/logo-mini-text.svg" width="101" height="18" alt="Логотип интернет-магазина Кэт энерджи в виде текста">
-          </a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
+        <div class="page-header__container-logo">
+          <div class="logo">
+            <a class="logo__link">
+              <img class="logo__link-icon logo__link-icon--size" src="img/logo-mini-icon.svg"  width="33" height="38" alt="Логотип интернет-магазина Кэт энерджи в виде иконки">
+            </a>
+            <a class="logo__link">
+              <img class="logo__link-text logo__link-text--size" src="img/logo-mini-text.svg" width="101" height="18" alt="Логотип интернет-магазина Кэт энерджи в виде текста">
+            </a>
+          </div>
+          <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
+        </div>
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__item-link">Главная</a>
@@ -40,16 +44,20 @@
 
     <main class="page-main">
       <section class="select-program">
-        <h1 class="select-program__title">
-          Функциональное питание для котов
-        </h1>
-        <p class="select-program__slogan">
-          Занялся собой? Займись котом!
-        </p>
+        <div class="select-program__wrapper">
+          <h1 class="select-program__title">
+            Функциональное питание для котов
+          </h1>
+          <p class="select-program__slogan">
+            Занялся собой? Займись котом!
+          </p>
+        </div>
         <img class="select-program__image" src="img/product-foto.png" width="280" height="270" alt="Красно-оранжевая банка с едой для котов, на крышке логотип компании">
-        <a class="select-program__button button" href="form.html">
-          подобрать программу
-        </a>
+        <div class="select-program__wrapper-button">
+          <a class="select-program__button button button--main button--green" href="form.html">
+            подобрать программу
+          </a>
+        </div>
       </section>
 
       <section class="desсription-catalog">
@@ -117,19 +125,16 @@
             <dd class="example__description">
               затрачено времени
             </dd>
-            <dt class="example__number">
-              15 000 РУБ.
-            </dt>
-            <dd class="example__description">
-              Затраты на питание:
-            </dd>
           </dl>
+          <p class="example__text-center">
+            Затраты на питание: 15 000 РУБ.
+          </p>
           <div class="example__slider slider">
             <ul class="slider__list">
-              <li class="slider__item">
+              <li class="slider__item slider__item--before">
                 <img class="slider__image" src="img/cat-fat.png" width="311" height="232" alt="Жирный кот сидит">
               </li>
-              <li class="slider__item">
+              <li class="slider__item slider__item--after">
                 <img class="slider__image" src="img/cat-skinny.png" width="311" height="232" alt="Худой кот сидит">
               </li>
             </ul>
@@ -144,8 +149,11 @@
           </div>
         </div>
       </section>
+    </main>
 
-      <section class="map">
+    <footer class="page-footer">
+
+      <section class="map map--index">
         <h2 class="visually-hidden">Расположение магазина на карте</h2>
         <div class="map__cooperation">
           <div class="map__wrapper">
@@ -161,11 +169,8 @@
           <!-- Тут будет карта -->
         </div>
       </section>
-    </main>
 
-    <footer class="page-footer">
       <div class="page-footer__wrapper">
-
         <h2 class="visually-hidden">Логотип интернет магазина Кэт энерджи</h2>
         <a class="page-footer__link-logo logo-link" aria-label="Перейти на главную страницу интернет магазина Кэт энерджи">
           <img class="logo-link__image" src="img/logo-mini-text.svg" width="128" height="24" alt="Логотип интернет-магазина Кэт энерджи в виде текста">

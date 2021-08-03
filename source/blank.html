@@ -2,29 +2,33 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи: Тестовая страница</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon@180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="logo">
-          <a class="logo__link" href="index.html">
-            <img class="logo__link-icon logo__link-icon--size" src="img/logo-mini-icon.svg"  width="33" height="38" alt="Логотип интернет-магазина Кэт энерджи в виде иконки">
-          </a>
-          <a class="logo__link" href="index.html">
-            <img class="logo__link-text logo__link-text--size" src="img/logo-mini-text.svg" width="101" height="18" alt="Логотип интернет-магазина Кэт энерджи в виде текста">
-          </a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
+        <div class="page-header__container-logo">
+          <div class="logo">
+            <a class="logo__link" href="index.html">
+              <img class="logo__link-icon logo__link-icon--size" src="img/logo-mini-icon.svg"  width="33" height="38" alt="Логотип интернет-магазина Кэт энерджи в виде иконки">
+            </a>
+            <a class="logo__link" href="index.html">
+              <img class="logo__link-text logo__link-text--size" src="img/logo-mini-text.svg" width="101" height="18" alt="Логотип интернет-магазина Кэт энерджи в виде текста">
+            </a>
+          </div>
+          <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
+        </div>
+        <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a class="main-nav__item-link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
@@ -45,8 +49,25 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
 
+      <section class="map">
+        <h2 class="visually-hidden">Расположение магазина на карте</h2>
+        <div class="map__cooperation">
+          <div class="map__wrapper">
+            <h3 class="map__title">
+              приглашаем к сотрудничеству дилеров!
+            </h3>
+            <p class="map__description">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </p>
+          </div>
+        </div>
+        <div class="map__visually">
+          <!-- Тут будет карта -->
+        </div>
+      </section>
+
+      <div class="page-footer__wrapper">
         <h2 class="visually-hidden">Логотип интернет магазина Кэт энерджи</h2>
         <a class="page-footer__link-logo logo-link" href="index.html" aria-label="Перейти на главную страницу интернет магазина Кэт энерджи">
           <img class="logo-link__image" src="img/logo-mini-text.svg" width="128" height="24" alt="Логотип интернет-магазина Кэт энерджи в виде текста">

@@ -1,0 +1,7 @@
+.social {
+  padding: 22px 0;
+}
+
+.social__list {
+  @include zero-style-list;
+}
