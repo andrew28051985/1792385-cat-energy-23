@@ -11,13 +11,26 @@
 .map__cooperation {
   margin-bottom: 26px;
   padding: 28px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 62px 72px 52px 71px;
+  }
 }
 
 .map__wrapper {
+  display: flex;
+  justify-content: space-between;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .map__title {
+  max-width: 170px;
+
   @include zero-margin-padding;
   @include font-size-line-height(16px, 20px);
   font-weight: initial;
@@ -26,6 +39,8 @@
 }
 
 .map__description {
+  max-width: 160px;
+
   @include zero-margin-padding;
   font-family: "Arial", sans-serif;
 

@@ -1,15 +1,49 @@
 .select-program {
+  position: relative;
   margin-bottom: 22px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 678px;
+    margin: 0 auto;
+    padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1140px;
+    padding-left: 80px;
+  }
 }
 
 .select-program__wrapper {
   height: 302px;
+  background-color: $background-green;
+  color: $basik-light;
+
+  @media (min-width: $tablet-width) {
+    width: 414px;
+    height: 181px;
+    margin-bottom: 50px;
+    color: $basic-dark;
+    background-color: $basik-light;
+  }
+}
+
+.select-program__container-cat-green {
+  width: 280px;
+  height: 100%;
   margin: 0 auto;
   background: linear-gradient(to top, $background-green, $background-green), url("../img/background@1044.jpg") no-repeat 65%/163%;
 
-  color: $basik-light;
+  @media (min-width: $tablet-width) {
+    width: inherit;
+    margin: 0;
+    text-align: left;
+    background: $basik-light;
+  }
 }
 
 .select-program__title {
@@ -27,6 +61,27 @@
   @include font-size-line-height(14px, 14px);
 }
 
+.select-program__image {
+  margin-top: -135px;
+
+  @media (min-width: $tablet-width) {
+    z-index: -1;
+    order: 3;
+    margin-top: -50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 0;
+    margin: -200px auto 0 auto;
+  }
+}
+
 .select-program__wrapper-button {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    padding: 0;
+    text-align: left;
+  }
 }

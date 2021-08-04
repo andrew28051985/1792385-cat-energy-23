@@ -1,6 +1,17 @@
 .work {
   margin-bottom: 42px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 599px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .work__title {
@@ -14,6 +25,13 @@
 .work__list {
   @include zero-style-list;
   padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
 }
 
 .work__item {
@@ -21,6 +39,14 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
   }
 }
 
