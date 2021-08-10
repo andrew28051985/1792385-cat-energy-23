@@ -16,6 +16,13 @@
     margin-bottom: 0;
     padding: 62px 72px 52px 71px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 1220px;
+  }
 }
 
 .map__wrapper {
@@ -25,6 +32,19 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: calc(200px - 201px / 2);
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+    height: 201px;
+    padding: 0;
+    background-color: $basik-light;
   }
 }
 
@@ -52,4 +72,8 @@
   min-width: 320px;
   height: 362px;
   background: $background-grey url("../img/location@320.png") no-repeat 0 0/100%;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
