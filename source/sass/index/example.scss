@@ -1,18 +1,77 @@
 .example {
-  padding: 27px 0 25px 0;
   background-color: $background-second-grey;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.example__outer-wrapper {
+  @media (min-width: $desktop-width) {
+    flex-basis: 100%;
+    background-color: $basik-light;
+  }
 }
 
 .example__wrapper {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  &--title,
+  &--text {
+    @media (min-width: $tablet-width) {
+      background-color: $basik-light;
+    }
+  }
+
+  &--text {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      padding-bottom: 250px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: column;
+      justify-content: left;
+      width: 436px;
+      margin: 0;
+      padding: 70px 94px 75px 0;
+      background-color: $background-second-grey;
+    }
+  }
+
+  &--slider {
+    @media (min-width: $desktop-width) {
+      width: 690px;
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
 
 .example__title {
   @include zero-margin-padding;
-  margin-bottom: 33px;
+  padding-bottom: 33px;
 
   @include font-size-line-height(36px, 40px);
   font-weight: initial;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 63px;
+  }
 }
 
 .example__text {
@@ -23,6 +82,14 @@
 
   @include font-size-line-height(14px, 18px);
   color: $text-grey;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 0;
+  }
 }
 
 .example__list {
@@ -50,6 +117,10 @@
   @include font-size-line-height(14px, 20px);
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .example__toggle {

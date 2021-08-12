@@ -12,3 +12,11 @@
 
   cursor: pointer;
 }
+
+.slider__image {
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}

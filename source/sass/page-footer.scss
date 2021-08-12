@@ -5,6 +5,19 @@
 .page-footer__wrapper {
   padding: 39px 20px 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 30px 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 57px 0 58px 0;
+  }
 }
 
 .page-footer__link-logo {

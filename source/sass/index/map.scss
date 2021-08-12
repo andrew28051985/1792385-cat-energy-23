@@ -11,13 +11,46 @@
 .map__cooperation {
   margin-bottom: 26px;
   padding: 28px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 62px 72px 52px 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 1220px;
+  }
 }
 
 .map__wrapper {
+  display: flex;
+  justify-content: space-between;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: calc(200px - 201px / 2);
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+    height: 201px;
+    padding: 0;
+    background-color: $basik-light;
+  }
 }
 
 .map__title {
+  max-width: 170px;
+
   @include zero-margin-padding;
   @include font-size-line-height(16px, 20px);
   font-weight: initial;
@@ -26,6 +59,8 @@
 }
 
 .map__description {
+  max-width: 160px;
+
   @include zero-margin-padding;
   font-family: "Arial", sans-serif;
 
@@ -37,4 +72,8 @@
   min-width: 320px;
   height: 362px;
   background: $background-grey url("../img/location@320.png") no-repeat 0 0/100%;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

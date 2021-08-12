@@ -1,9 +1,21 @@
 .main-nav {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+  }
 }
 
 .main-nav__item {
   padding: 22px 0 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .main-nav__list {
@@ -12,6 +24,12 @@
   text-transform: uppercase;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-nav__item-link {
