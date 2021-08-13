@@ -1,6 +1,13 @@
 .surprice {
   margin-bottom: 35px;
   background: $background-green url("../img/catalog/surprice.png") no-repeat 0 55%/100%;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 245px;
+    flex-grow: 0;
+    height: 289px;
+    background: $background-green url("../img/catalog/surprice.png") no-repeat;
+  }
 }
 
 .surprice__text {

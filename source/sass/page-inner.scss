@@ -1,5 +1,15 @@
 .page-inner {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .page-inner__title {
@@ -8,4 +18,25 @@
 
   @include font-size-line-height(36px, 36px);
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 0 82px;
+
+    @include font-size-line-height(60px, 60px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 0 84px;
+  }
+}
+
+.page-inner__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }

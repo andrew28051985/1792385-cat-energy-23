@@ -1,5 +1,14 @@
 .additional-products {
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 896px;
+    padding: 0;
+  }
 }
 
 .additional-products__title {
@@ -8,6 +17,11 @@
 
   @include font-size-line-height(24px, 24px);
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-line-height(36px, 36px);
+    margin-bottom: 80px;
+  }
 }
 
 .additional-products__list {
