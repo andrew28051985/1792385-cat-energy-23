@@ -1,9 +1,25 @@
+.selection-program {
+  @media (min-width: $tablet-width) {
+    padding-right: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
 .selection-program__title {
   @include zero-margin-padding;
   padding: 27px 0 37px;
 
   @include font-size-line-height(36px, 36px);
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 0 54px;
+
+    @include font-size-line-height(60px, 60px);
+  }
 }
 
 .selection-program__text {
