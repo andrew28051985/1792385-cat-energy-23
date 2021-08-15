@@ -67,6 +67,10 @@
   margin: 0;
 
   @include font-size-line-height(14px, 14px);
+
+  @media (min-width: $tablet-width) {
+    @include font-size-line-height(20px, 20px);
+  }
 }
 
 .select-program__image {
