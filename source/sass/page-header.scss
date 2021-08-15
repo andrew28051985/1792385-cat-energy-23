@@ -27,6 +27,7 @@
 .page-header__container-logo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 18px;
   padding: 10px 20px 0 20px;
 
@@ -42,9 +43,26 @@
 }
 
 .page-header__toggle {
+  position: relative;
+  width: 24px;
+  height: 16px;
+  padding: 0;
+  border: none;
   cursor: pointer;
+  background-color: $basik-light;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  &--closed::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 1.5px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
   }
 }

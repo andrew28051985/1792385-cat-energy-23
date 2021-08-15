@@ -1,6 +1,4 @@
 .social {
-  padding: 22px 75px;
-
   @media (min-width: $tablet-width) {
     padding: 0;
   }
@@ -8,8 +6,16 @@
 
 .social__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   @include zero-style-list;
+}
+
+.social__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
