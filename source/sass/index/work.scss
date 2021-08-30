@@ -3,8 +3,25 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    width: 599px;
-    padding: 0 30px;
+    position: relative;
+    margin-bottom: 47px;
+    padding: 0 105px 0 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $border-nav-grey;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        display: none;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +37,12 @@
 
   @include font-size-line-height(36px, 40px);
   font-weight: initial;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+
+    @include font-size-line-height(60px, 60px);
+  }
 }
 
 .work__list {
@@ -29,13 +52,16 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
     padding-left: 0;
   }
 }
 
 .work__item {
-  margin-bottom: 20px;
+  position: relative;
+  max-width: 251px;
+  margin-bottom: 25px;
 
   &:last-child {
     margin-bottom: 0;
@@ -43,6 +69,85 @@
 
   @media (min-width: $tablet-width) {
     width: 40%;
+    margin-bottom: 0;
+    margin-right: 68px;
+    padding: 111px 29px 57px 0;
+
+    &::before {
+      position: absolute;
+      bottom: 22px;
+      right: 0;
+
+      @include font-size-line-height(280px, 280px);
+
+      color: $background-grey;
+    }
+
+    &:first-child {
+      box-sizing: border-box;
+      width: 230px;
+      margin-bottom: 77px;
+
+      &::before {
+        content: "1";
+        bottom: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      box-sizing: border-box;
+      width: 246px;
+      margin-bottom: 77px;
+
+      &::before {
+        content: "2";
+      }
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      box-sizing: border-box;
+      width: 246px;
+      margin-bottom: 47px;
+
+      &::before {
+        content: "3";
+        bottom: 0;
+      }
+    }
+
+    &:last-child {
+      box-sizing: border-box;
+      width: 250px;
+      margin-bottom: 47px;
+      margin-right: 0;
+
+      &::before {
+        content: "4";
+        bottom: 0;
+      }
+    }
+
+    @media (min-width: $laptop-width) {
+      &:nth-child(2n) {
+        margin-right: 77px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 77px;
+
+      &:nth-child(2n) {
+        margin-right: 77px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -51,10 +156,70 @@
 }
 
 .work__text {
+  position: relative;
+
   @include zero-margin-padding;
 
   font-family: "Arial", sans-serif;
 
   @include font-size-line-height(14px, 18px);
   color: $text-grey;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-line-height(16px, 24px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -80px;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      top: -111px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    left: -65px;
+    top: 14px;
+
+    @media (min-width: $tablet-width) {
+      left: 25px;
+      top: -86px;
+    }
+  }
+
+  &--leaf::before {
+    width: 30px;
+    height: 32px;
+    background: url("../img/icon_leaf.svg") no-repeat;
+  }
+
+  &--tub::before {
+    width: 29px;
+    height: 31px;
+    background: url("../img/icon_tub.svg") no-repeat;
+  }
+
+  &--eat::before {
+    width: 25px;
+    height: 30px;
+    background: url("../img/icon_eat.svg") no-repeat;
+  }
+
+  &--alarm::before {
+    width: 32px;
+    height: 33px;
+    background: url("../img/icon_alarm.svg") no-repeat;
+  }
 }
