@@ -1,9 +1,23 @@
 .slider__list {
   @include zero-style-list;
+  margin-bottom: 33px;
   text-align: center;
 }
 
+.slider__item {
+  &--after {
+    display: none;
+  }
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .slider__toggle {
+  @include zero-style-list;
   line-height: 20px;
   text-transform: uppercase;
 
@@ -11,6 +25,14 @@
   border: none;
 
   cursor: pointer;
+
+  &:nth-child(1) {
+    margin-right: 12px;
+  }
+
+  &:nth-child(2) {
+    order: 3;
+  }
 }
 
 .slider__image {

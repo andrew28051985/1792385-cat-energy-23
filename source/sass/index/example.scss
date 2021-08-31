@@ -67,7 +67,7 @@
 
 .example__title {
   @include zero-margin-padding;
-  padding-bottom: 33px;
+  padding: 27px 0 33px 0;
 
   @include font-size-line-height(36px, 40px);
   font-weight: initial;
@@ -96,21 +96,50 @@
 }
 
 .example__list {
+  position: relative;
+
   @include zero-margin-padding;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .example__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 56px;
+  text-align: center;
+
   @include font-size-line-height(24px, 24px);
+
+  background: url("../img/border-mini.svg") no-repeat;
 }
 
 .example__description {
+  position: absolute;
+
   @include zero-margin-padding;
 
   font-family: "Arial", sans-serif;
 
   @include font-size-line-height(12px, 12px);
   color: $text-grey;
+  text-align: center;
+
+  &--weight {
+    left: 23px;
+    bottom: -15px;
+    width: 77px;
+  }
+
+  &--time {
+    right: 33px;
+    bottom: -15px;
+    width: 59px;
+  }
 }
 
 .example__text-center {
@@ -127,5 +156,6 @@
 }
 
 .example__toggle {
+  padding-bottom: 40px;
   text-align: center;
 }
