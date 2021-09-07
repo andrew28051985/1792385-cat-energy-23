@@ -1,9 +1,31 @@
 .slider__list {
+  position: relative;
+
   @include zero-style-list;
+  margin-bottom: 33px;
   text-align: center;
 }
 
+.slider__item {
+  &--after {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--before {
+      margin-top: -200px;
+    }
+  }
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .slider__toggle {
+  @include zero-style-list;
   line-height: 20px;
   text-transform: uppercase;
 
@@ -11,12 +33,27 @@
   border: none;
 
   cursor: pointer;
+
+  &:nth-child(1) {
+    margin-right: 12px;
+  }
+
+  &:nth-child(2) {
+    order: 3;
+  }
 }
 
 .slider__image {
-  margin-left: -20px;
+  width: 311px;
+  height: 232px;
 
   @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 518px;
     margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
   }
 }

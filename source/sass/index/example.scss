@@ -25,6 +25,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
+    padding: 0;
   }
 
   &--title,
@@ -40,7 +41,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
 
-      padding-bottom: 250px;
+      padding-bottom: 255px;
     }
 
     @media (min-width: $desktop-width) {
@@ -54,6 +55,12 @@
   }
 
   &--slider {
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      /*height: 462px;*/
+    }
+
     @media (min-width: $desktop-width) {
       width: 690px;
       margin: 0;
@@ -64,13 +71,16 @@
 
 .example__title {
   @include zero-margin-padding;
-  padding-bottom: 33px;
+  padding: 27px 0 33px 0;
 
   @include font-size-line-height(36px, 40px);
   font-weight: initial;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     padding-bottom: 63px;
+
+    @include font-size-line-height(60px, 60px);
   }
 }
 
@@ -85,6 +95,9 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 100%;
+    margin-bottom: 54px;
+
+    @include font-size-line-height(16px, 24px);
   }
 
   @media (min-width: $desktop-width) {
@@ -93,21 +106,93 @@
 }
 
 .example__list {
+  position: relative;
+
   @include zero-margin-padding;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 366px;
+    margin-bottom: 55px;
+  }
 }
 
 .example__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 56px;
+  text-align: center;
+
   @include font-size-line-height(24px, 24px);
+
+  background: url("../img/border-mini.svg") no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+
+    @include font-size-line-height(30px, 37px);
+    background: url("../img/border-middle.svg") no-repeat;
+
+    &:first-child {
+      margin-right: 42px;
+    }
+  }
 }
 
 .example__description {
+  position: absolute;
+
   @include zero-margin-padding;
 
   font-family: "Arial", sans-serif;
 
   @include font-size-line-height(12px, 12px);
   color: $text-grey;
+  text-align: center;
+
+  &--weight {
+    left: 23px;
+    bottom: -15px;
+    width: 77px;
+  }
+
+  &--time {
+    right: 33px;
+    bottom: -15px;
+    width: 59px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-size-line-height(14px, 14px);
+
+    &--weight {
+      bottom: -5px;
+      width: 115px;
+    }
+
+    &--time {
+      right: 12px;
+      bottom: -5px;
+      width: 140px;
+      background-color: $basik-light;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--time {
+      background-color: $background-second-grey;
+    }
+  }
 }
 
 .example__text-center {
@@ -118,11 +203,30 @@
   text-transform: uppercase;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    width: 180px;
+    margin-bottom: 0;
+
+    @include font-size-line-height(20px, 30px);
+    text-align: right;
+  }
+
   @media (min-width: $desktop-width) {
+    width: inherit;
     text-align: left;
+
+    & span {
+      margin-left: 63px;
+    }
   }
 }
 
 .example__toggle {
+  padding-bottom: 40px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    /*padding-top: 358px;*/
+    padding-bottom: 67px;
+  }
 }

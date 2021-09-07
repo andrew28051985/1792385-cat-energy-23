@@ -35,7 +35,13 @@
   color: $text-second-grey;
 
   &--title {
+    width: 76px;
     margin-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      justify-self: center;
+      width: 127px;
+    }
   }
 
   &--image {
@@ -72,28 +78,14 @@
   font-weight: 400;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
   &--all {
     margin-bottom: 8px;
     text-align: center;
     color: $second-dark;
-  }
-
-  & br:nth-child(1) {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  & br:nth-child(2) {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: inline;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    text-align: center;
   }
 }
 

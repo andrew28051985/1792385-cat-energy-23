@@ -1,3 +1,27 @@
 .progress-line {
-  font-weight: 400;
+  position: relative;
+  margin-right: 12px;
+}
+
+.progress-line,
+.progress-line__outer {
+  width: 84px;
+  height: 14px;
+}
+
+.progress-line__outer {
+  border: 1px solid $border-input-hover;
+  border-radius: 6px;
+  background-color: $basik-light;
+}
+
+.progress-line__inner {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 35px;
+  height: 6px;
+  background-color: $basic-green;
+  border-radius: 6px;
 }

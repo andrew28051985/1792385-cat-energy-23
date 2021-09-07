@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0;
+  padding: 28px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -12,6 +12,25 @@
 .developer__link {
   @include zero-margin-padding;
   text-decoration: none;
+  color: $hover-svg;
+
+  &:hover,
+  &:focus {
+    color: $basic-green;
+  }
+
+  &:active {
+    color: $basic-green;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .developer__name {

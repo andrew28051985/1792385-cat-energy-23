@@ -4,6 +4,23 @@
   @include font-size-line-height(20px, 20px);
 }
 
+.page-header--main-page {
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      width: 50%;
+      height: 694px;
+      background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background@1044-1.jpg") no-repeat;
+      background-color: $background-green;
+      background-size: cover;
+    }
+  }
+}
+
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
@@ -27,7 +44,8 @@
 .page-header__container-logo {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 18px;
+  align-items: center;
+  margin-bottom: 17px;
   padding: 10px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -39,12 +57,87 @@
   @media (min-width: $desktop-width) {
     width: 202px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    &--closed-nav {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -17px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $border-nav-grey;
+      }
+    }
+  }
 }
 
 .page-header__toggle {
+  position: relative;
+  width: 28px;
+  height: 39px;
+  padding: 0;
+  border: none;
   cursor: pointer;
+  background-color: $basik-light;
 
   @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 1px solid $basic-dark;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &--closed-nav {
+      position: relative;
+    }
+
+    &--closed-nav::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 2px;
+      width: 24px;
+      height: 1.5px;
+      background-color: #000000;
+      box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    }
+
+    &--opened-nav::before,
+    &--opened-nav::after {
+      content: "";
+      position: absolute;
+      top: 5;
+      left: 0;
+      width: 28px;
+      height: 1.5px;
+      background-color: #000000;
+    }
+
+    &--opened-nav::before {
+      transform: rotate(-45deg);
+    }
+
+    &--opened-nav::after {
+      transform: rotate(45deg);
+    }
+  }
+
+  &--no-js {
     display: none;
   }
 }

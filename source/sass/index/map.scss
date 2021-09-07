@@ -56,6 +56,15 @@
   font-weight: initial;
   text-transform: uppercase;
   color: $second-dark;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-line-height(20px, 21px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
+    margin-right: 87px;
+  }
 }
 
 .map__description {
@@ -66,6 +75,23 @@
 
   @include font-size-line-height(14px, 20px);
   color: $text-grey;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: right;
+
+    & br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .map__visually {
