@@ -1,4 +1,5 @@
 .surprice {
+  position: relative;
   margin-bottom: 35px;
   background: $background-green url("../img/catalog/surprice.png") no-repeat 0 55%/100%;
 
@@ -18,4 +19,15 @@
   @include font-size-line-height(16px, 20px);
   color: $basik-light;
   text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 78px;
+    height: 80px;
+    background: url("../img/catalog/icon_surprice.svg") no-repeat;
+  }
 }

@@ -58,6 +58,8 @@
 
 .product-card__description,
 .product-card__price {
+  font-family: "Arial", sans-serif;
+
   @include font-size-line-height(14px, 14px);
   color: $text-grey;
 }

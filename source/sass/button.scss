@@ -21,6 +21,12 @@
     @include font-size-line-height(16px, 20px);
   }
 
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      width: 248px;
+    }
+  }
+
   &--form {
     width: 100%;
     border: none;
