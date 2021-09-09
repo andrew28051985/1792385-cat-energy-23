@@ -12,7 +12,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 169px;
+    grid-template-columns: 180px;
+    width: 180px;
+    padding: 0 30px 40px 35px;
   }
 
   &--all {

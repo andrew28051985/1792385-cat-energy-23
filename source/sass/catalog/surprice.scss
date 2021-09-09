@@ -1,13 +1,21 @@
 .surprice {
   position: relative;
+  margin: 0 20px;
   margin-bottom: 35px;
   background: $background-green url("../img/catalog/surprice.png") no-repeat 0 55%/100%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 76px;
+    background: $background-green url("../img/catalog/surprice.png") no-repeat 0 62%/100%;
+  }
 
   @media (min-width: $desktop-width) {
     flex-basis: 245px;
     flex-grow: 0;
-    height: 289px;
-    background: $background-green url("../img/catalog/surprice.png") no-repeat;
+    margin: 0;
+    margin-bottom: 86px;
+    background: $background-green url("../img/catalog/surprice_big.png") no-repeat 0 55%/100%;
+    background-size: cover;
   }
 }
 
@@ -20,6 +28,18 @@
   color: $basik-light;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    width: 165px;
+    padding: 71px 124px 69px 422px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: 245px;
+    padding: 185px 43px 43px 41px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -29,5 +49,10 @@
     width: 78px;
     height: 80px;
     background: url("../img/catalog/icon_surprice.svg") no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 77px;
+      transform: translateX(0);
+    }
   }
 }

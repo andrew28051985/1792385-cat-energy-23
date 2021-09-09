@@ -1,30 +1,62 @@
 .additional-products {
+  position: relative;
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 38px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-basis: 896px;
     padding: 0;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 40px;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      top: 20px;
+      width: 100%;
+    }
+  }
+}
+
+.additional-products__title-wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    margin-left: 37px;
+  }
 }
 
 .additional-products__title {
   position: relative;
+  display: inline-block;
 
   @include zero-margin-padding;
-  padding: 25px 0 36px;
+  padding: 25px 22px 36px 0;
 
   @include font-size-line-height(24px, 24px);
   font-weight: 400;
+  background-color: $basik-light;
 
   @media (min-width: $tablet-width) {
     @include font-size-line-height(36px, 36px);
     margin-bottom: 80px;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 37px;
 
     &::before {
       position: absolute;
@@ -38,7 +70,7 @@
     }
   }
 
-  &::after {
+/*  &::after {
     position: absolute;
     content: "";
     right: -20px;
@@ -53,7 +85,7 @@
       right: -68px;
       width: 121%;
     }
-  }
+  }*/
 }
 
 .additional-products__list {
@@ -62,7 +94,27 @@
 
 .additional-products__item {
   position: relative;
+  margin: 0 20px;
+  border-top: 1px solid $border-input-hover;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+    padding: 0 38px;
+    border-left: 1px solid $border-input-hover;
+    border-right: 1px solid $border-input-hover;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $border-input-hover;
+  }
+  /*
   &::before {
     position: absolute;
     content: "";
@@ -71,6 +123,10 @@
     width: 100%;
     height: 1px;
     background-color: $border-input-hover;
+
+    @media (min-width: $tablet-width) {
+      left: -38px;
+    }
   }
 
   &:last-child::after {
@@ -81,5 +137,11 @@
     width: 100%;
     height: 1px;
     background-color: $border-input-hover;
+
+    @media (min-width: $tablet-width) {
+      left: -38px;
+      bottom: -28px;
+    }
   }
+  */
 }
