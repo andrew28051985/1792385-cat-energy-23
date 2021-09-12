@@ -6,8 +6,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    /*width: 1220px;
-    margin: 0 auto;*/
     padding: 0;
   }
 
@@ -16,6 +14,8 @@
   }
 
   &--form {
+    padding: 0;
+
     @media (min-width: $tablet-width) {
       padding-left: 70px;
     }
