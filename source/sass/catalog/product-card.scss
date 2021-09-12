@@ -11,6 +11,10 @@
     padding-bottom: 28px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 16px;
+  }
+
   &:last-child {
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
@@ -33,6 +37,7 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 250px;
+    padding: 0;
   }
 }
 
