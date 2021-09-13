@@ -1,6 +1,6 @@
 .selection-program {
   @media (min-width: $tablet-width) {
-    padding-right: 37px;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,9 +16,15 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 0 54px;
+    padding: 64px 0 54px 71px;
 
     @include font-size-line-height(60px, 60px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 74px 0 54px;
   }
 }
 

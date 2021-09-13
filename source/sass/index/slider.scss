@@ -25,6 +25,8 @@
 }
 
 .slider__toggle {
+  position: relative;
+
   @include zero-style-list;
   line-height: 20px;
   text-transform: uppercase;
@@ -34,8 +36,41 @@
 
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    @include font-size-line-height(20px, 30px);
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px dotted $basic-dark;
+      opacity: 0.4;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        border-bottom: 1px solid $basic-dark;
+        opacity: 0.4;
+      }
+    }
+
+    &:active {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
   &:nth-child(1) {
     margin-right: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 24px;
+    }
   }
 
   &:nth-child(2) {

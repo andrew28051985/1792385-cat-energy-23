@@ -1,10 +1,23 @@
 .example {
+  position: relative;
   background-color: $background-second-grey;
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: $background-grey;
+
+    &::after {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      width: 32%;
+      height: 462px;
+      background-color: $background-second-grey;
+    }
   }
 }
 
@@ -50,7 +63,7 @@
       width: 436px;
       margin: 0;
       padding: 70px 94px 75px 0;
-      background-color: $background-second-grey;
+      background-color: $background-grey;
     }
   }
 

@@ -5,6 +5,7 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 
   &--main {
     @include font-size-line-height(14px, 18px);
@@ -40,10 +41,28 @@
   &--green {
     color: $basik-light;
     background-color: $basic-green;
+
+    &:hover,
+    &:focus {
+      background-color: $hover-green;
+    }
+
+    &:active {
+      color: $light-transparent;
+    }
   }
 
   &--grey {
     color: $text-grey;
     background-color: $background-grey;
+
+    &:hover,
+    &:focus {
+      background-color: $border-special-grey;
+    }
+
+    &:active {
+      color: $grey-transparent;
+    }
   }
 }

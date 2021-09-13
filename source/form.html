@@ -128,34 +128,38 @@
               </div>
             </fieldset>
             <fieldset class="form__fieldset">
-              <legend class="form__legend form__legend--middle">Комментарий</legend>
-              <label class="visually-hidden" for="comment_for_cat">комментарий о коте</label>
-              <div class="form__textarea-wrapper">
-                <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" id="comment_for_cat" name="comment"></textarea>
+              <div class="form__fieldset-wrapper-comment">
+                <legend class="form__legend form__legend--middle">Комментарий</legend>
+                <label class="visually-hidden" for="comment_for_cat">комментарий о коте</label>
+                <div class="form__textarea-wrapper">
+                  <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" id="comment_for_cat" name="comment"></textarea>
+                </div>
               </div>
             </fieldset>
-            <fieldset class="form__fieldset">
-              <legend class="form__legend form__legend--middle">
-                Дополнительно
-              </legend>
-              <ul class="form__list">
-                <li class="form__item form__item--checkbox">
-                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
-                  <label class="form__label form__label--checkbox" for="sweetener">сахарозаменитель</label>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="water" id="water">
-                  <label class="form__label form__label--checkbox" for="water">питьевая вода</label>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="milk" id="milk">
-                  <label class="form__label form__label--checkbox" for="milk">молоко</label>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-                  <label class="form__label form__label--checkbox" for="vitamins">витамины</label>
-                </li>
-              </ul>
+            <fieldset class="form__fieldset form__fieldset--last">
+              <div class="form__fieldset-wrapper-add">
+                <legend class="form__legend form__legend--middle">
+                  Дополнительно
+                </legend>
+                <ul class="form__list">
+                  <li class="form__item form__item--checkbox">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
+                    <label class="form__label form__label--checkbox" for="sweetener">сахарозаменитель</label>
+                  </li>
+                  <li class="form__item form__item--checkbox">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="water" id="water">
+                    <label class="form__label form__label--checkbox" for="water">питьевая вода</label>
+                  </li>
+                  <li class="form__item form__item--checkbox">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="milk" id="milk">
+                    <label class="form__label form__label--checkbox" for="milk">молоко</label>
+                  </li>
+                  <li class="form__item form__item--checkbox">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+                    <label class="form__label form__label--checkbox" for="vitamins">витамины</label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
             <div class="form__wrapper">
               <button class="form__button button button--form button--green" type="submit" aria-label="Отправить заявку на подбор программы для кота">
