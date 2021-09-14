@@ -3,11 +3,16 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 16px;
   }
 
   &:last-child {
@@ -32,6 +37,7 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 250px;
+    padding: 0;
   }
 }
 
@@ -58,6 +64,8 @@
 
 .product-card__description,
 .product-card__price {
+  font-family: "Arial", sans-serif;
+
   @include font-size-line-height(14px, 14px);
   color: $text-grey;
 }

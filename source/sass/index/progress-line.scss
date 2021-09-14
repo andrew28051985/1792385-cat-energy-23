@@ -1,27 +1,87 @@
 .progress-line {
   position: relative;
   margin-right: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.progress-line__button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 34px;
+    height: 34px;
+    border: 1px solid $border-input-hover;
+    border-radius: 50%;
+    background-color: $basik-light;
+    filter: $shadow-button;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      filter: $shadow-button-hover;
+    }
+
+    &:active {
+      border: 1px solid $basic-green;
+      filter: $shadow-button-presed;
+    }
+
+    &::before {
+      z-index: 2;
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $basic-green;
+      cursor: pointer;
+    }
+  }
 }
 
 .progress-line,
 .progress-line__outer {
   width: 84px;
   height: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+  }
 }
 
 .progress-line__outer {
   border: 1px solid $border-input-hover;
   border-radius: 6px;
   background-color: $basik-light;
+
+  @media (min-width: $tablet-width) {
+    background-color: $grey-progress-line;
+  }
 }
 
 .progress-line__inner {
   position: absolute;
   left: 6px;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translateY(-50%);
   width: 35px;
   height: 6px;
   background-color: $basic-green;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

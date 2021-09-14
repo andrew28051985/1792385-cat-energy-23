@@ -6,14 +6,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
+    padding: 0;
+  }
+
+  &--catalog {
     padding: 0;
   }
 
   &--form {
+    padding: 0;
+
     @media (min-width: $tablet-width) {
-      padding-left: 70px;
+      padding-left: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -24,19 +28,21 @@
 
 .page-inner__title {
   @include zero-margin-padding;
-  padding: 27px 0 41px;
+  padding: 27px 20px 41px;
 
   @include font-size-line-height(36px, 36px);
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 0 82px;
+    padding: 64px 30px 163px;
 
     @include font-size-line-height(60px, 60px);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 74px 0 84px;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 74px 0 165px;
   }
 }
 
@@ -48,5 +54,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 86px;
   }
 }
