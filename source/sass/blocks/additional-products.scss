@@ -57,17 +57,6 @@
     @include font-size-line-height(36px, 36px);
     margin-bottom: 80px;
     padding: 0 37px;
-
-    &::before {
-      position: absolute;
-      z-index: -1;
-      content: "";
-      left: -38px;
-      top: 0;
-      width: 410px;
-      height: 36px;
-      background-color: $basik-light;
-    }
   }
 }
 
