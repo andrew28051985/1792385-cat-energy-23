@@ -46,7 +46,7 @@
 
     @media (min-width: $tablet-width) {
       justify-self: center;
-      width: 127px;
+      width: 140px;
       margin-bottom: 14px;
     }
   }
@@ -193,14 +193,19 @@
 }
 
 .card__image {
-  &--small {
-    width: 68px;
-    height: 86px;
+  width: 140px;
+  height: 112px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+    margin-top: -42px;
   }
 
-  &--big {
-    width: 84px;
-    height: 100px;
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+    margin-top: -55px;
   }
 }
 

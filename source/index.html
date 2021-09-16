@@ -17,10 +17,17 @@
           <div class="page-header__container-logo">
             <div class="logo">
               <a class="logo__link">
-                <img class="logo__link-icon logo__link-icon--size" src="img/logo-mini-icon.svg"  width="33" height="38" alt="Логотип интернет-магазина Кэт энерджи в виде иконки">
+                <picture>
+                  <source media="(min-width: 1220px)" srcset="img/logo-max.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-medium.svg">
+                  <img class="logo__link-icon logo__link-icon--size" src="img/logo-mini-icon.svg"  width="33" height="38" alt="Логотип интернет-магазина Кэт энерджи в виде иконки">
+                </picture>
               </a>
               <a class="logo__link logo__link--text">
-                <img class="logo__link-text logo__link-text--size" src="img/logo-mini-text.svg" width="101" height="18" alt="Логотип интернет-магазина Кэт энерджи в виде текста">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/logo-max-text.svg">
+                  <img class="logo__link-text logo__link-text--size" src="img/logo-mini-text.svg" width="101" height="18" alt="Логотип интернет-магазина Кэт энерджи в виде текста">
+                </picture>
               </a>
             </div>
             <button class="page-header__toggle page-header__toggle--closed-nav page-header__toggle--no-js" type="button">
@@ -55,7 +62,14 @@
               </p>
             </div>
           </div>
-          <img class="select-program__image" src="img/product-foto.png" width="280" height="270" alt="Красно-оранжевая банка с едой для котов, на крышке логотип компании">
+          <picture>
+            <source type="image/webp" media="(min-width: 1220px)" srcset="img/product-foto-maxi@1x.webp, img/product-foto-maxi@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/product-foto-medium@1x.webp, img/product-foto-medium@2x.webp 2x">
+            <source type="image/webp" srcset="img/product-foto-mini@1x.webp, img/product-foto-mini@2x.webp 2x">
+            <source media="(min-width: 1220px)" srcset="img/product-foto-maxi@1x.png, img/product-foto-maxi@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/product-foto-medium@1x.png, img/product-foto-medium@2x.png 2x">
+            <img class="select-program__image" src="img/product-foto-mini@1x.png" srcset="img/product-foto-mini@2x.png 2x" width="280" height="270" alt="Красно-оранжевая банка с едой для котов, на крышке логотип компании">
+          </picture>
           <div class="select-program__wrapper-button">
             <a class="select-program__button button button--main button--green" href="form.html">
               подобрать программу
@@ -141,10 +155,21 @@
             <div class="example__slider slider">
               <ul class="slider__list">
                 <li class="slider__item slider__item--before">
-                  <img class="slider__image slider__image--before" src="img/cat-fat.png" width="311" height="232" alt="Жирный кот сидит">
+
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat-medium@1x.webp, img/cat-fat-medium@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/cat-fat-medium@1x.png, img/cat-fat-medium@2x.png 2x">
+                    <img class="slider__image slider__image--before" src="img/cat-fat-mini@1x.png" srcset="img/cat-fat-mini@2x.png 2x" width="311" height="232" alt="Жирный кот сидит">
+                  </picture>
+
                 </li>
                 <li class="slider__item slider__item--after">
-                  <img class="slider__image slider__image--after" src="img/cat-skinny.png" width="311" height="232" alt="Худой кот сидит">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-skinny-medium@1x.webp, img/cat-skinny-medium@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/cat-skinny-medium@1x.png, img/cat-skinny-medium@2x.png 2x">
+                    <img class="slider__image slider__image--after" src="img/cat-skinny-mini@1x.png" srcset="img/cat-skinny-mini@2x.png 2x" width="311" height="232" alt="Худой кот сидит">
+                  </picture>
+
                 </li>
               </ul>
               <div class="example__toggle slider__toggles">

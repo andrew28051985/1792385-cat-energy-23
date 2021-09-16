@@ -59,6 +59,7 @@
 
   @media (min-width: $tablet-width) {
     width: 414px;
+    padding-top: 0;
 
     @include font-size-line-height(60px, 60px);
   }
@@ -75,6 +76,8 @@
 }
 
 .select-program__image {
+  width: 280px;
+  height: 270px;
   margin-top: -135px;
 
   @media (min-width: $tablet-width) {
@@ -82,15 +85,15 @@
     order: 3;
     width: 709px;
     height: 609px;
-    margin-top: -74px;
-    margin-left: -65px;
+    margin-top: -45px;
+    margin-left: -85px;
   }
 
   @media (min-width: $desktop-width) {
     z-index: 0;
     width: 552px;
     height: 499px;
-    margin: -276px 330px 0 368px;
+    margin: -320px 330px 0 368px;
   }
 }
 
@@ -98,6 +101,8 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 225px;
     width: 244px;
     padding: 0;
     text-align: left;

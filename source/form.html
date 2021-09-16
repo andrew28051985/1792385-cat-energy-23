@@ -17,7 +17,11 @@
           <div class="page-header__container-logo">
             <div class="logo">
               <a class="logo__link" href="index.html">
-                <img class="logo__link-icon logo__link-icon--size" src="img/logo-mini-icon.svg"  width="33" height="38" alt="Логотип интернет-магазина Кэт энерджи в виде иконки">
+                <picture>
+                  <source media="(min-width: 1220px)" srcset="img/logo-max.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-medium.svg">
+                  <img class="logo__link-icon logo__link-icon--size" src="img/logo-mini-icon.svg"  width="33" height="38" alt="Логотип интернет-магазина Кэт энерджи в виде иконки">
+                </picture>
               </a>
               <a class="logo__link logo__link--text" href="index.html">
                 <img class="logo__link-text logo__link-text--size" src="img/logo-mini-text.svg" width="101" height="18" alt="Логотип интернет-магазина Кэт энерджи в виде текста">
@@ -165,7 +169,7 @@
               <button class="form__button button button--form button--green" type="submit" aria-label="Отправить заявку на подбор программы для кота">
                 отправить заявку
               </button>
-              <p class="selection-program__text form__text--down">
+              <p class="selection-program__text form__text form__text--down">
                 * — Обязательные поля
               </p>
             </div>

@@ -38,7 +38,8 @@ exports.styles = styles;
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"))
+    .pipe(sync.stream());
 }
 
 exports.html = html;
@@ -128,8 +129,8 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
-  gulp.watch("source/js/navigation.js", gulp.series(scripts));
+  gulp.watch("source/*.html").on("change",gulp.series("html") ,sync.reload);
+  gulp.watch("source/js/navigation.js", gulp.series("scripts"));
 }
 
 /* Автоматизация для готового проекта */
