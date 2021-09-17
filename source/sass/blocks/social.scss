@@ -6,6 +6,10 @@
     padding: 0;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-left: 4px;
+  }
+
   &::before,
   &::after {
     content: "";
@@ -35,10 +39,19 @@
   align-items: center;
 
   @include zero-style-list;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 21px;
+    margin-top: -3px;
+  }
 }
 
 .social__item {
   margin-right: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -61,17 +74,34 @@
 
 .social__icon {
   &--vk {
-    width: 30px;
-    height: 22px;
+    width: 23px;
+    height: 16px;
   }
 
   &--youtube {
-    width: 23px;
-    height: 23px;
+    width: 16px;
+    height: 16px;
   }
 
   &--facebook {
-    width: 28px;
-    height: 33px;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--youtube {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 28px;
+      height: 33px;
+    }
   }
 }

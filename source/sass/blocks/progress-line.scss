@@ -1,9 +1,13 @@
 .progress-line {
   position: relative;
-  margin-right: 12px;
+  margin-right: 17px;
 
   @media (min-width: $tablet-width) {
     margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 19px;
   }
 }
 

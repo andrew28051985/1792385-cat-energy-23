@@ -7,15 +7,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    width: 678px;
+    width: 658px;
     margin: 0 auto;
-    padding-left: 90px;
+    padding-left: 110px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1140px;
     padding-left: 80px;
-    margin-bottom: 158px;
+    margin-bottom: 133px;
   }
 }
 
@@ -51,7 +51,7 @@
 .select-program__title {
   width: 280px;
   margin: 0 auto;
-  padding: 27px 0 25px;
+  padding: 24px 0 27px;
 
   @include font-size-line-height(36px, 36px);
   font-weight: 400;
@@ -60,18 +60,32 @@
   @media (min-width: $tablet-width) {
     width: 414px;
     padding-top: 0;
+    padding-left: 7px;
+    padding-bottom: 40px;
 
     @include font-size-line-height(60px, 60px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 39px;
+    padding-left: 0;
   }
 }
 
 .select-program__slogan {
   margin: 0;
+  margin-left: -3px;
 
   @include font-size-line-height(14px, 14px);
 
   @media (min-width: $tablet-width) {
+    padding-left: 12px;
+
     @include font-size-line-height(20px, 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -13px;
   }
 }
 
@@ -85,15 +99,15 @@
     order: 3;
     width: 709px;
     height: 609px;
-    margin-top: -45px;
-    margin-left: -85px;
+    margin-top: -31px;
+    margin-left: -111px;
   }
 
   @media (min-width: $desktop-width) {
     z-index: 0;
     width: 552px;
     height: 499px;
-    margin: -320px 330px 0 368px;
+    margin: -317px 330px 0 368px;
   }
 }
 
@@ -102,9 +116,15 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 225px;
+    top: 230px;
+    left: 119px;
     width: 244px;
     padding: 0;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 232px;
+    left: 80px;
   }
 }

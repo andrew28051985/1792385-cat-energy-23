@@ -2,28 +2,43 @@
   position: relative;
 
   @include zero-style-list;
-  margin-bottom: 33px;
+  margin-bottom: 27px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     height: 520px;
     width: 708px;
-    margin: 0 auto 15px;
+    margin: 0 auto 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
   }
 }
 
 .slider__item {
   @media (min-width: $tablet-width) {
     &--before {
-      margin-top: -200px;
+      margin-top: -170px;
     }
   }
 }
 
 .slider__toggles {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  width: 205px;
+  margin: 0 auto;
+  padding-left: 14px;
+  padding-top: 1px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+  }
 }
 
 .slider__toggle {
@@ -68,7 +83,7 @@
   }
 
   &:nth-child(1) {
-    margin-right: 12px;
+    margin-right: 17px;
 
     @media (min-width: $tablet-width) {
       margin-right: 24px;
@@ -97,12 +112,20 @@
   }
 
   @media (min-width: $desktop-width) {
+    bottom: 30px;
     width: 690px;
+    margin: 0 auto -6px -18px;
   }
 
   &--before {
     @media (min-width: $tablet-width) {
-      clip: rect(auto, 355px, auto, auto);
+      left: 5px;
+      clip: rect(auto, 353px, auto, auto);
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -1px;
+      clip: rect(auto, 365px, auto, auto);
     }
   }
 
@@ -111,8 +134,13 @@
 
     @media (min-width: $tablet-width) {
       display: block;
-      left: 35px;
-      clip: rect(auto, auto, auto, 316px);
+      left: 27px;
+      clip: rect(auto, auto, auto, 328px);
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 14px;
+      clip: rect(auto, auto, auto, 350px);
     }
   }
 }

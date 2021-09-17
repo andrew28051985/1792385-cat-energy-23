@@ -6,7 +6,7 @@
 
 .page-header--main-page {
   @media (min-width: $tablet-width) {
-    margin-bottom: 64px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -114,8 +114,8 @@
     &--closed-nav::before {
       content: "";
       position: absolute;
-      top: 10px;
-      left: 2px;
+      top: 13px;
+      left: 4px;
       width: 24px;
       height: 1.5px;
       background-color: #000000;

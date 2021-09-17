@@ -67,6 +67,10 @@
   }
 
   &-wrapper-contacts {
+    margin: 0;
+    padding: 0;
+    border: none;
+
     &::after {
       position: absolute;
       z-index: -1;
@@ -94,6 +98,10 @@
 
   &-wrapper-comment,
   &-wrapper-add {
+    margin: 0;
+    padding: 0;
+    border: none;
+
     & > legend {
       max-width: 142px;
     }
@@ -593,6 +601,8 @@
 }
 
 .form__button {
+  margin-bottom: 21px;
+
   @media (min-width: $tablet-width) {
     flex-basis: 45%;
     margin-right: 61px;

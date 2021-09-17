@@ -10,11 +10,11 @@
 
 .map__cooperation {
   margin-bottom: 26px;
-  padding: 28px 0 0;
+  padding: 24px 0 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    padding: 62px 72px 52px 71px;
+    padding: 68px 72px 57px 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,21 +35,22 @@
   }
 
   @media (min-width: $desktop-width) {
+    box-sizing: border-box;
     position: absolute;
     top: calc(200px - 201px / 2);
-    left: 10px;
+    left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 570px;
     height: 201px;
-    padding: 0;
+    padding: 0 79px 0 76px;
     background-color: $basik-light;
   }
 }
 
 .map__title {
-  max-width: 170px;
+  width: 138px;
 
   @include zero-margin-padding;
   @include font-size-line-height(16px, 20px);
@@ -58,17 +59,20 @@
   color: $second-dark;
 
   @media (min-width: $tablet-width) {
-    @include font-size-line-height(20px, 21px);
+    width: 170px;
+
+    @include font-size-line-height(20px, 26px);
   }
 
   @media (min-width: $desktop-width) {
     width: 163px;
-    margin-right: 87px;
+    margin-right: 0;
+    line-height: 25px;
   }
 }
 
 .map__description {
-  max-width: 160px;
+  width: 142px;
 
   @include zero-margin-padding;
   font-family: "Arial", sans-serif;
@@ -81,6 +85,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 170px;
     font-size: 16px;
     text-align: right;
 
@@ -90,6 +95,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-right: -5px;
+    margin-top: 5px;
     text-align: left;
   }
 }
