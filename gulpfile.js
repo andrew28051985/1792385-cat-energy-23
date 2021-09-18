@@ -16,6 +16,22 @@ const del = require("del");
 
 // Styles
 
+const csscreate = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"));
+}
+
+exports.csscreate = csscreate;
+
+/* CSS не минимизированный */
+
 const styles = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -61,8 +77,8 @@ exports.scripts = scripts;
 const optimizeImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
-    imagemin.mozjpeg({ progressive: true }),
-    imagemin.optipng({ optimizationLevel: 3 }),
+    imagemin.mozjpeg({ quality: 75, progressive: true }),
+    imagemin.optipng({ optimizationLevel: 6 }),
     imagemin.svgo()
   ]))
     .pipe(gulp.dest("build/img"));
