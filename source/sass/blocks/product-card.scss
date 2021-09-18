@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -33,6 +33,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 25px 0;
+
+    @include font-size-line-height(20px, 20px);
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +53,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    padding-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,6 +63,10 @@
 
 .product-card__price {
   @include zero-margin-padding;
+
+  @media (min-width: $desktop-width) {
+    margin-right: -17px;
+  }
 }
 
 .product-card__description,
@@ -68,10 +75,18 @@
 
   @include font-size-line-height(14px, 14px);
   color: $text-grey;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-line-height(16px, 20px);
+  }
 }
 
 .product-card__description {
   margin-right: 50px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 18px;
+  }
 }
 
 .product-card__button {

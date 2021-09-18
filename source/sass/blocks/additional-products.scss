@@ -1,6 +1,6 @@
 .additional-products {
   position: relative;
-  margin-bottom: 36px;
+  margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -23,7 +23,7 @@
     background-color: $basic-green;
 
     @media (min-width: $tablet-width) {
-      top: 20px;
+      top: 22px;
       width: 100%;
     }
   }
@@ -47,7 +47,7 @@
   display: inline-block;
 
   @include zero-margin-padding;
-  padding: 25px 22px 36px 0;
+  padding: 25px 22px 34px 0;
 
   @include font-size-line-height(24px, 24px);
   font-weight: 400;
@@ -55,15 +55,23 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-line-height(36px, 36px);
-    margin-bottom: 80px;
+    margin-bottom: 79px;
     padding: 0 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
   }
 }
 
 .additional-products__list {
   @include zero-style-list;
 
-  margin-bottom: 69px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;

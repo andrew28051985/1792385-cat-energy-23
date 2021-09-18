@@ -80,7 +80,7 @@
   @include font-size-line-height(14px, 20px);
   color: $text-grey;
 
-  & br {
+  & br + br {
     display: none;
   }
 
@@ -89,7 +89,7 @@
     font-size: 16px;
     text-align: right;
 
-    & br {
+    & br + br {
       display: block;
     }
   }

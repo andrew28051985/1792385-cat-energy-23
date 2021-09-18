@@ -5,7 +5,7 @@
   background: $background-green url("../img/catalog/surprice.png") no-repeat 0 55%/100%;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px 76px;
+    margin: 0 30px 73px;
     background: $background-green url("../img/catalog/surprice.png") no-repeat 0 62%/100%;
   }
 
@@ -20,7 +20,7 @@
 
 .surprice__text {
   @include zero-margin-padding;
-  padding: 186px 61px 43px 58px;
+  padding: 189px 61px 43px 58px;
   font-family: "Arial", sans-serif;
 
   @include font-size-line-height(16px, 20px);
@@ -29,7 +29,7 @@
 
   @media (min-width: $tablet-width) {
     width: 165px;
-    padding: 71px 124px 69px 422px;
+    padding: 71px 120px 69px 422px;
     text-align: left;
   }
 

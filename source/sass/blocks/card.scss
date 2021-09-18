@@ -19,35 +19,45 @@
 
   &--all {
     grid-template-columns: 1fr;
-    padding-top: 76px;
+    padding-top: 73px;
 
     @media (min-width: $tablet-width) {
-      grid-template-rows: 67px 123px 40px;
+      grid-template-rows: 70px 123px 40px;
       width: 244px;
-      padding-top: 161px;
+      padding-top: 157px;
+      padding-left: 37px;
+      padding-right: 42px;
       background-color: $basik-light;
       border: 2px solid $background-grey;
     }
 
     @media (min-width: $desktop-width) {
       width: 165px;
+      padding-left: 34px;
+      padding-top: 155px;
+      padding-right: 39px;
     }
   }
 }
 
 .card__link {
   display: block;
+  padding-top: 4px;
   text-decoration: none;
   color: $text-second-grey;
 
   &--title {
     width: 76px;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 
     @media (min-width: $tablet-width) {
       justify-self: center;
       width: 140px;
       margin-bottom: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 17px;
     }
   }
 
@@ -74,6 +84,10 @@
         left: calc(50% - 30px);
         width: 60px;
       }
+
+      @media (min-width: $desktop-width) {
+        top: 79px;
+      }
     }
 
     &::after {
@@ -89,7 +103,11 @@
 
     @media (min-width: $tablet-width) {
       margin-top: -35px;
-      margin-bottom: 34px;
+      margin-bottom: 27px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 37px;
     }
   }
 }
@@ -100,11 +118,15 @@
   flex-wrap: wrap;
 
   @include zero-style-list;
-  margin-bottom: 15px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 92%;
   }
 }
 
@@ -119,6 +141,10 @@
   @media (min-width: $tablet-width) {
     @include font-size-line-height(20px, 24px);
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 22px;
   }
 
   &--all {
@@ -195,6 +221,7 @@
 .card__image {
   width: 140px;
   height: 112px;
+  margin-top: -11px;
 
   @media (min-width: $tablet-width) {
     width: 168px;
@@ -205,7 +232,7 @@
   @media (min-width: $desktop-width) {
     width: 172px;
     height: 196px;
-    margin-top: -55px;
+    margin-top: -46px;
   }
 }
 

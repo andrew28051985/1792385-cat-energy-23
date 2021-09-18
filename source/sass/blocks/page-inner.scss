@@ -34,7 +34,7 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 30px 163px;
+    padding: 62px 30px 163px;
 
     @include font-size-line-height(60px, 60px);
   }
@@ -56,6 +56,6 @@
     align-items: flex-end;
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 86px;
+    margin-bottom: 82px;
   }
 }
