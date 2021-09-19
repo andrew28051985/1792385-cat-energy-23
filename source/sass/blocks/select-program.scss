@@ -7,7 +7,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    width: 658px;
+    min-width: 658px;
     margin: 0 auto;
     padding-left: 110px;
   }
@@ -107,7 +107,7 @@
     z-index: 0;
     width: 552px;
     height: 499px;
-    margin: -317px 330px 0 368px;
+    margin: -317px 225px 0 368px;
   }
 }
 
